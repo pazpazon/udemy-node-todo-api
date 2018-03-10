@@ -7,6 +7,7 @@ if (process.env.PORT) {
 } else {
     connectionString = 'mongodb://localhost:27017/TodoApp';
 }
+console.log('connectionString set to: ', connectionString);
 mongoose.connect( connectionString );
 
 module.exports = {mongoose};
